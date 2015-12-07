@@ -8,7 +8,7 @@
   </definition>
   
   <definition name="index" extends="common">
-    <put-attribute name="title" value="lil blog" />
+    <put-attribute name="title" value="jazzhands" />
     <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
   </definition>
 </tiles-definitions>
