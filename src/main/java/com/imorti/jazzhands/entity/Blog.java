@@ -1,8 +1,13 @@
 package com.imorti.jazzhands.entity;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Blog {
@@ -14,6 +19,13 @@ public class Blog {
 	private String url;
 	
 	private String name;
+	
+	@OneToMany(mappedBy = "blog")
+	private List<Item> items;
+	
+	@ManyToOne
+	@JoinColumn(name="user_id")
+	private User user;
 
 	public Integer getId() {
 		return id;
