@@ -22,6 +22,6 @@
 	</servlet-mapping>
 	
 	<listener>
-		<listender-class>org.springframework.web.context.ContextLoaderListener</listender-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	</web-app>
