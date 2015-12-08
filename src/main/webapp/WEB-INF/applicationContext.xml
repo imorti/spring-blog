@@ -38,4 +38,6 @@
 		<property name="dataSource" ref="dataSource"/>
 	</bean>
 	
+	<jpa:repositories base-package="com.imorti.jazzhands.repository"></jpa:repositories>
+	
 </beans>
