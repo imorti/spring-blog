@@ -2,7 +2,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-	<display-name>java-blog-aggregator</display-name>
+	<display-name>jazz hands</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
@@ -21,4 +21,7 @@
 		<url-pattern>*.json</url-pattern>
 	</servlet-mapping>
 	
+	<listener>
+		<listender-class>org.springframework.web.context.ContextLoaderListener</listender-class>
+	</listener>
 	</web-app>
