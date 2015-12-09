@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+
     
 <div class="container">
 
@@ -14,12 +15,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            ${current}
             <a class="navbar-brand" href="#">Project name</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="<spring:url value="/" />">Home</a></li>
-              <li><a href="<spring:url value="/users.html" />">Users</a></li>
+              <li class="${current == 'index' ? 'active' : '' }"><a href="<spring:url value="/" />">Home</a></li>
+              <li class="${current == 'users' ? 'active' : '' }"><a href="<spring:url value="/users.html" />">Users</a></li>
               <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
