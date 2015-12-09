@@ -7,7 +7,7 @@
   
   <!-- Shared version number properties -->
 <properties>
-    <org.springframework.version>4.0.2.RELEASE</org.springframework.version>
+    <org.springframework.version>4.1.1.RELEASE</org.springframework.version>
     <apache.tiles>3.0.3</apache.tiles>
 </properties>
 
@@ -58,7 +58,7 @@
 <dependency>
   <groupId>org.springframework</groupId>
   <artifactId>spring-beans</artifactId>
-  <version>${org.springframework.version}</version>
+  <version>4.1.1.RELEASE</version>
 </dependency>
 
 
