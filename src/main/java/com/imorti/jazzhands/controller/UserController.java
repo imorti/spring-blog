@@ -37,5 +37,9 @@ public class UserController {
 		
 	}
 	
+	@RequestMapping("/register")
+	public String showRegister() {
+		return "user-register";
+	}
 
 }
