@@ -17,6 +17,7 @@ import com.imorti.jazzhands.repository.ItemRepository;
 import com.imorti.jazzhands.repository.UserRepository;
 
 @Service
+@Transactional
 public class UserService {
 
 	
@@ -27,8 +28,7 @@ public class UserService {
 	private BlogRepository blogRepo;
 	
 	@Autowired
-	private ItemRepository itemRepo;
-	
+	private ItemRepository itemRepo;	
 	
 	public List<User> findAll() {
 		return userRepo.findAll();
@@ -53,6 +53,12 @@ public class UserService {
 			user.setBlogs(blogs);
 		
 		return user;
+	}
+
+
+	public void save(User user) {
+		// TODO Auto-generated method stub
+		userRepo.save(user);
 	}
 	
 }

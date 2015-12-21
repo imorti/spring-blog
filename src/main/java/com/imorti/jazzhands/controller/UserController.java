@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.imorti.jazzhands.entity.User;
 import com.imorti.jazzhands.service.UserService;
@@ -47,6 +48,12 @@ public class UserController {
 	
 	@RequestMapping("/register")
 	public String showRegister() {
+		return "user-register";
+	}
+	
+	@RequestMapping(value="/register", method=RequestMethod.POST)
+	public String doRegister(@ModelAttribute("user") User user) {
+		userService.save(user);
 		return "user-register";
 	}
 
