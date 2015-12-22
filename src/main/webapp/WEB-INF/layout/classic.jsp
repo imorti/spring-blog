@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
     <%@ include file="../layout/taglib.jsp" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+	<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
     <%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -48,6 +48,8 @@
               <li class="${current == 'index' ? 'active' : '' }"><a href="<spring:url value="/" />">Home</a></li>
               <li class="${current == 'users' ? 'active' : '' }"><a href="<spring:url value="/users.html" />">Users</a></li>
               <li class="${current == 'register' ? 'active' : '' }"><a href="<spring:url value="/register.html" />">Register</a></li>
+              <li class="${current == 'login' ? 'active' : '' }"><a href="<spring:url value="/login.html" />">Login</a></li>
+
               <li><a href="#">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
